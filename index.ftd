@@ -1,1 +1,140 @@
--- ds.page: hello
+-- string t1: 
+# **Some Circular Pizza.** 
+
+
+-- ftd.color red:
+light: red
+dark: red
+
+-- ftd.color white:
+light: white
+dark: white
+
+-- ftd.color green:
+light: green
+dark: green
+
+-- ftd.color black:
+light: black
+dark: black
+
+-- ftd.color blue:
+light: blue
+dark: blue
+
+
+/--------------------------TOP-CARD-------------------------------
+
+-- ftd.row top-card:
+background-image: $assets.files.pizza.jpg
+width: fill
+height: 200
+margin-top: 10
+margin-left: 100
+margin-right: 100
+margin-bottom: 50
+
+--- ftd.text: $t1
+padding-left: 10
+text-align: left
+position: bottom
+
+/------------------------SUB-IMAGE-CARD---------------------------
+
+-- ftd.column image-card:
+open: false
+width: fill
+padding-right: 50
+padding-left: 50
+
+--- ftd.image: Some pizza which we can't eat 
+src: $assets.files.pizza-2.jpg
+width: fill
+
+/-------------------------SUB-TEXT-CARD---------------------------
+
+-- ftd.column text-card:
+open: true
+width: fill
+background-color: $green
+padding-right: 50
+
+--- ftd.text: # **Pizza and what it is ?**
+color: $red
+text-align: center
+text-transform: bold
+position: center
+
+--- ftd.text: ### *Something about pizza*
+text-align: center
+position: center
+
+--- ftd.text: 
+text-align: justify
+padding-left: 20
+padding-right: 20
+
+### Pizza is an Italian food that was created in Italy (The Naples area). It is made with different toppings. Some of the most common toppings are cheese, sausages, pepperoni, vegetables, tomatoes, spices and herbs and basil. These toppings are added over a piece of bread covered with sauce. The sauce is most often tomato-based, but butter-based sauces are used, too. The piece of bread is usually called a "pizza crust".
+
+--- ftd.text: ### All infomation coming from wikipedia, the free encyclopedia
+text-align: center
+position: center
+
+/---------------------------MID-CARD-----------------------------
+
+-- ftd.row mid-card:
+id: mid-c
+width: fill
+height: 200
+margin-left: 50
+margin-right: 50
+
+--- image-card:
+
+--- text-card:
+
+/--------------------------ITEM-CARD-----------------------------
+
+
+/------------------------SUB-TEXT-CARD-2-------------------------
+
+-- ftd.column text-card-2:
+open: false
+width: fill 
+spacing: 20
+background-color: $green
+
+--- ftd.text: # **Menu** 
+text-align: center
+text-transform: bold
+position: center
+
+--- ftd.text: ### *Some random pizza list*
+text-align: center
+position: center
+
+/--------------------------BOT-CARD------------------------------
+
+-- ftd.row bot-card:
+open: false
+id: bot-c
+width: fill
+height: 200
+
+--- text-card-2:
+
+--- image-card:
+
+/-------------------------BUILD-----------------------------------
+
+
+-- top-card:
+
+-- mid-card:
+
+
+
+
+
+
+

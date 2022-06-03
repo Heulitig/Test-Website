@@ -1,8 +1,11 @@
 -- import: fpm
 
--- fpm.package: heulitig.github.io/test-website
+-- fpm.package: test-website
 zip: github.com/heulitig/test-website/archive/refs/heads/main.zip
 
 -- fpm.dependency: fifthtry.github.io/doc-site as ds
 
 -- fpm.auto-import: ds
+-- fpm.auto-import: test-website/assets
+
+
