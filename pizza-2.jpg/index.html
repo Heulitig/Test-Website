@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8"><base href="/Test-Website/">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-        <title># **Some Circular Pizza.**</title>
+        <title>pizza-2.jpg.ftd</title>
         <script type="ftd" id="ftd-data">{
   "fpm#theme-color": {
     "value": "#1F5E6B",
@@ -17,45 +17,7 @@
           "condition": true,
           "dependency_type": "Variable",
           "parameters": {
-            "test-website/assets#files.pizza.jpg": {
-              "default": {
-                "important": false,
-                "reference": null,
-                "value": "light"
-              },
-              "value": {
-                "important": false,
-                "reference": null,
-                "value": "dark"
-              }
-            }
-          },
-          "remaining": null
-        },
-        {
-          "condition": true,
-          "dependency_type": "Variable",
-          "parameters": {
-            "test-website/assets#files.pizza-2.jpg": {
-              "default": {
-                "important": false,
-                "reference": null,
-                "value": "light"
-              },
-              "value": {
-                "important": false,
-                "reference": null,
-                "value": "dark"
-              }
-            }
-          },
-          "remaining": null
-        },
-        {
-          "condition": true,
-          "dependency_type": "Variable",
-          "parameters": {
-            "test-website/assets#files.pizza-3.jpg": {
+            "test-website/pizza-2.jpg/#src@0": {
               "default": {
                 "important": false,
                 "reference": null,
@@ -105,6 +67,25 @@
           "dependency_type": "Variable",
           "parameters": {
             "ds#is-mobile": {
+              "default": {
+                "important": false,
+                "reference": null,
+                "value": false
+              },
+              "value": {
+                "important": false,
+                "reference": null,
+                "value": true
+              }
+            }
+          },
+          "remaining": null
+        },
+        {
+          "condition": "mobile",
+          "dependency_type": "Variable",
+          "parameters": {
+            "fifthtry.github.io/doc-site#is-mobile": {
               "default": {
                 "important": false,
                 "reference": null,
@@ -324,81 +305,19 @@
     "value": false,
     "dependencies": {}
   },
-  "test-website/#t1": {
-    "value": "# **Some Circular Pizza.**",
-    "dependencies": {
-      "0,0": [
-        {
-          "condition": null,
-          "dependency_type": "Value",
-          "parameters": {},
-          "remaining": null
-        }
-      ]
-    }
-  },
-  "test-website/assets#files": {
+  "test-website/pizza-2.jpg/#src@0": {
     "value": {
-      "README": {
-        "md": "/Test-Website/-/test-website/README.md",
-        "md-page": "/README"
-      },
-      "index": {
-        "ftd": "/Test-Website/index.ftd"
-      },
-      "pizza": {
-        "jpg": {
-          "$kind$": "light",
-          "dark": "/Test-Website/-/test-website/pizza.jpg",
-          "light": "/Test-Website/-/test-website/pizza.jpg"
-        },
-        "jpg-page": "/pizza"
-      },
-      "pizza-2": {
-        "jpg": {
-          "$kind$": "light",
-          "dark": "/Test-Website/-/test-website/pizza-2.jpg",
-          "light": "/Test-Website/-/test-website/pizza-2.jpg"
-        },
-        "jpg-page": "/pizza-2"
-      },
-      "pizza-3": {
-        "jpg": {
-          "$kind$": "light",
-          "dark": "/Test-Website/-/test-website/pizza-3.jpg",
-          "light": "/Test-Website/-/test-website/pizza-3.jpg"
-        },
-        "jpg-page": "/pizza-3"
-      }
+      "$kind$": "light",
+      "dark": "-/test-website/pizza-2.jpg",
+      "light": "-/test-website/pizza-2.jpg"
     },
     "dependencies": {
       "0": [
         {
           "condition": null,
-          "dependency_type": "Style",
-          "parameters": {
-            "background-image": {
-              "default": null,
-              "value": {
-                "important": false,
-                "reference": null,
-                "value": {
-                  "$kind$": "light",
-                  "dark": "url(/Test-Website/-/test-website/pizza.jpg)",
-                  "light": "url(/Test-Website/-/test-website/pizza.jpg)"
-                }
-              }
-            }
-          },
-          "remaining": "pizza.jpg"
-        }
-      ],
-      "1,0,0": [
-        {
-          "condition": null,
           "dependency_type": "Value",
           "parameters": {},
-          "remaining": "pizza-2.jpg"
+          "remaining": null
         }
       ]
     }
@@ -588,34 +507,10 @@ body.fpm-dark .ft_md a code {
 
 body.fpm-dark .ft_md a:visited code {
     color: #a27de7;
-}
-
-.b_0 {
-    background-color: rgba(0,128,0,1)
-}
-
-
-
-body.fpm-dark .b_0 {
-    background-color: rgba(0,128,0,1)
-}
-
-
-
-body.fpm-dark .c_1 {
-    color: rgba(255,0,0,1)
-}
-
-
-
-.c_1 {
-    color: rgba(255,0,0,1)
-}
-
-</style>
+}</style>
     </head>
     <body>
-        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0:main" style="align-items: flex-start; background-image: url(/Test-Website/-/test-website/pizza.jpg); background-position: center; background-size: cover; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 200px; justify-content: flex-start; margin-bottom: 50px; margin-left: 100px; margin-right: 100px; margin-top: 10px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="0,0:main" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-bottom: 0; margin-top: auto; padding-left: 10px; text-align: left; text-decoration: none; white-space: initial" class="ft_md"><h1><strong>Some Circular Pizza.</strong></h1></div></div><div data-id="1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: row; flex-wrap: nowrap; height: 200px; justify-content: flex-start; margin-left: 50px; margin-right: 50px; text-decoration: none; white-space: initial; width: 100%" ><div data-id="1,0:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-left: 50px; padding-right: 50px; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="1,0,0:main" src="/Test-Website/-/test-website/pizza-2.jpg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-decoration: none; white-space: initial; width: 100%"></div><div data-id="1,1:main" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; justify-content: flex-start; padding-right: 50px; text-decoration: none; white-space: initial; width: 100%" class="b_0"><div data-id="1,1,0:main" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: auto; margin-right: auto; text-align: center; text-decoration: none; text-transform: bold; white-space: initial" class="c_1 ft_md"><h1><strong>Pizza and what it is ?</strong></h1></div><div data-id="1,1,1:main" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: auto; margin-right: auto; text-align: center; text-decoration: none; white-space: initial" class="ft_md"><h3><em>Something about pizza</em></h3></div><div data-id="1,1,2:main" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; padding-left: 20px; padding-right: 20px; text-align: justify; text-decoration: none; white-space: initial" class="ft_md"><h3>Pizza is an Italian food that was created in Italy (The Naples area). It is made with different toppings. Some of the most common toppings are cheese, sausages, pepperoni, vegetables, tomatoes, spices and herbs and basil. These toppings are added over a piece of bread covered with sauce. The sauce is most often tomato-based, but butter-based sauces are used, too. The piece of bread is usually called a “pizza crust”.</h3></div><div data-id="1,1,3:main" style="align-self: center; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; margin-left: auto; margin-right: auto; text-align: center; text-decoration: none; white-space: initial" class="ft_md"><h3>All infomation coming from wikipedia, the free encyclopedia</h3></div></div></div></div><style>
+        <div data-id="main:root" style="align-items: flex-start; border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; display: flex; flex-direction: column; flex-wrap: nowrap; height: 100%; justify-content: flex-start; text-decoration: none; white-space: initial; width: 100%" ><img alt="" data-id="0:main" src="-/test-website/pizza-2.jpg" style="border-radius: 0px; border-style: solid; border-width: 0px; box-sizing: border-box; text-decoration: none; white-space: initial"></div><style>
 
 
 
